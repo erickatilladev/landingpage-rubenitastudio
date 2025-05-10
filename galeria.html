@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Noivas - Rubenita Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-rubenita.png" alt="Rubenita Studio" width="180"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="galeria.html" class="active">Galeria</a></li>
+                    <li><a href="index.html#depoimentos">Depoimentos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="gallery-main">
+        <section class="gallery-hero">
+            <h1>Nossas Noivas</h1>
+            <p>Confira os trabalhos realizados pelo Rubenita Studio</p>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="maquiagem">Maquiagem</button>
+                    <button class="filter-btn" data-filter="penteado">Penteados</button>
+                    <button class="filter-btn" data-filter="completo">Pacote Completo</button>
+                </div>
+
+                <div class="gallery-grid" id="lightgallery">
+                    <!-- Item 1 -->
+                    <a href="./assets/banner.jpeg" class="gallery-item penteado" data-sub-html="<h4>Noiva Clara</h4><p>Maquiagem natural com destaque para os olhos</p>">
+                        <img src="./assets/banner.jpeg" alt="Noiva Clara">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Maquiagem Natural</h3>
+                        </div>
+                    </a>
+                    
+                    <!-- Item 2 -->
+                    <a href="./assets/dp1.jpg" class="gallery-item penteado" data-sub-html="<h4>Noiva Juliana</h4><p>Penteado semi-preso com detalhes em flores</p>">
+                        <img src="./assets/dp1.jpg" alt="Noiva Juliana">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Penteado Romântico</h3>
+                        </div>
+                    </a>
+                    
+                    <!-- 20-30 itens adicionais seguindo o mesmo padrão -->
+                    <!-- ... -->
+                </div>
+
+                <div class="gallery-load-more">
+                    <button id="loadMore">Carregar Mais</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo-rubenita-branco.png" alt="Rubenita Studio" width="150">
+                <p>Transformando noivas em princesas desde 2010</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="galeria.html" class="active">Galeria</a></li>
+                    <li><a href="index.html#depoimentos">Depoimentos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Horário de Funcionamento</h3>
+                <p>Terça a Sábado: 9h às 19h</p>
+                <p>Domingo: 9h às 16h</p>
+                <p>Segunda: Fechado</p>
+                <p>Atendimento mediante agendamento</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Rubenita Studio. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Erick Atilla <i class="fas fa-heart"></i> para noivas especiais</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/551193014597" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
